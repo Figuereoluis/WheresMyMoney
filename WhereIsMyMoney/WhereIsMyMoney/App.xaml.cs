@@ -13,8 +13,9 @@ namespace WhereIsMyMoney
 		{
 			InitializeComponent();
 
-			MainPage = new WhereIsMyMoney.MainPage();
-		}
+            //MainPage = new WhereIsMyMoney.MainPage();
+            this.MainPage = new NavigationPage(new LoginPage());
+        }
 
 		protected override void OnStart ()
 		{

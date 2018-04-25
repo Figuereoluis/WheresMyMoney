@@ -61,6 +61,7 @@
     <Compile Include="Origin.cs" />
     <Compile Include="Periodicity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Response.cs" />
     <Compile Include="Status.cs" />
     <Compile Include="Tag.cs" />
     <Compile Include="User.cs" />

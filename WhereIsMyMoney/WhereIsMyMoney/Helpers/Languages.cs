@@ -92,9 +92,9 @@
 
                
 
-        public static string Currencies
+        public static string Currency
         {
-            get { return Resource.Currencies; }
+            get { return Resource.Currency; }
         }
 
         

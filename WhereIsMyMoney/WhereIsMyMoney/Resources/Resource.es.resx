@@ -157,4 +157,7 @@
   <data name="Translations" xml:space="preserve">
     <value>Traducciones</value>
   </data>
+  <data name="Register" xml:space="preserve">
+    <value>Registrarse</value>
+  </data>
 </root>

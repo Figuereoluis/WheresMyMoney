@@ -177,4 +177,7 @@
   <data name="Translations" xml:space="preserve">
     <value>翻译</value>
   </data>
+  <data name="Register" xml:space="preserve">
+    <value>注册(&amp;R)...</value>
+  </data>
 </root>
