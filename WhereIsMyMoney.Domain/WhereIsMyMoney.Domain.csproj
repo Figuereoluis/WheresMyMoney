@@ -65,6 +65,7 @@
     <Compile Include="Status.cs" />
     <Compile Include="Tag.cs" />
     <Compile Include="User.cs" />
+    <Compile Include="UserRequest.cs" />
     <Compile Include="UserType.cs" />
     <Compile Include="Wallet.cs" />
   </ItemGroup>

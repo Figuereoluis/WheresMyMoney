@@ -1,5 +1,6 @@
 ﻿namespace WhereIsMyMoney.Domain
 {
+    using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using Newtonsoft.Json;
@@ -40,6 +41,15 @@
         [Display(Name = "Cliente Ps")]
         public int AuthorId { get; set; }
 
+        public string AccessToken { get; set; }
+
+        public string TokenType { get; set; }
+
+        public DateTime TokenExpires { get; set; }
+
+        public string Password { get; set; }
+
+        public bool IsRemembered { get; set; }
 
 
         [JsonIgnore]

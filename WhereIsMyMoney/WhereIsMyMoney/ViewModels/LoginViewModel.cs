@@ -6,6 +6,8 @@
     using Views;
     using Xamarin.Forms;
     using Helpers;
+    using WhereIsMyMoney.Models;
+    using WhereIsMyMoney.Domain;
 
     public class LoginViewModel : BaseViewModel
     {
@@ -14,29 +16,34 @@
         #endregion
 
         #region Attributes
-        private string email;
-        private string password;
-        private bool isRunning;
-        private bool isEnabled;
+        private readonly ApiService _apiService;
+        private readonly DialogService _dialogService;
+        private readonly DataService _dataService;
+        private readonly NavigationService _navigationService;
+        private string _email;
+        private string _password;
+        private bool _isRunning;
+        private bool _isEnabled;
+        private bool _isRemembered;
         #endregion
 
         #region Properties
         public string Email
         {
-            get { return this.email; }
-            set { SetValue(ref this.email, value); }
+            get { return this._email; }
+            set { SetValue(ref this._email, value); }
         }
 
         public string Password
         {
-            get { return this.password; }
-            set { SetValue(ref this.password, value); }
+            get { return this._password; }
+            set { SetValue(ref this._password, value); }
         }
 
         public bool IsRunning
         {
-            get { return this.isRunning; }
-            set { SetValue(ref this.isRunning, value); }
+            get { return this._isRunning; }
+            set { SetValue(ref this._isRunning, value); }
         }
 
         public bool IsRemembered
@@ -47,8 +54,8 @@
 
         public bool IsEnabled
         {
-            get { return this.isEnabled; }
-            set { SetValue(ref this.isEnabled, value); }
+            get { return this._isEnabled; }
+            set { SetValue(ref this._isEnabled, value); }
         }
         #endregion
 
@@ -108,7 +115,7 @@
                     Languages.Accept);
                 return;
             }
-
+            var parameters = _dataService.First<Parameter>(false);
             var token = await this.apiService.GetToken(
                 parameters.UrlBase,
                 this.Email,
@@ -139,14 +146,55 @@
 
             var mainViewModel = MainViewModel.GetInstance();
             mainViewModel.Token = token;
-            mainViewModel.Lands = new LandsViewModel();
-            await Application.Current.MainPage.Navigation.PushAsync(new LandsPage());
+            //mainViewModel.Lands = new LandsViewModel();
+            var response = await _apiService.GetUserByEmail(parameters.UrlBase,
+               "/api", "/Users/GetUserByEmail", token.TokenType, token.AccessToken, token.UserName);
 
+            if (!response.IsSuccess)
+            {
+                IsRunning = false;
+                IsEnabled = true;
+                await _dialogService.ShowMessage("Error", "Problem ocurred retrieving user information, try latter.");
+                return;
+            }
+
+            var user = (User)response.Result;
+
+            user.AccessToken = token.AccessToken;
+            user.TokenType = token.TokenType;
+            user.TokenExpires = token.Expires;
+            user.IsRemembered = IsRemembered;
+            user.Password = Password;
+            //_dataService.DeleteAllAndInsert(user.FavoriteTeam);
+            _dataService.DeleteAllAndInsert(user.UserType);
+            _dataService.DeleteAllAndInsert(user);
+
+            //if (!response.IsSuccess)
+            //{
+            //    IsRunning = false;
+            //    IsEnabled = true;
+            //    await _dialogService.ShowMessage("Error", "Problem ocurred retrieving user information, try latter.");
+            //    return;
+            //}
+           // var mainViewModel = MainViewModel.GetInstance();
+            mainViewModel.CurrentUser = user;
+            mainViewModel.SetCurrentUser(user);
+            Email = null;
+            // Password = null;
+            Password = null;
+
+            IsRunning = false;
+            IsEnabled = true;
+            mainViewModel.RegisterDevice(); //todo
             this.IsRunning = false;
             this.IsEnabled = true;
 
             this.Email = string.Empty;
             this.Password = string.Empty;
+            _navigationService.SetMainPage("MasterPage");
+            await Application.Current.MainPage.Navigation.PushAsync(new MasterPage());
+
+           
         }
         #endregion
     }
