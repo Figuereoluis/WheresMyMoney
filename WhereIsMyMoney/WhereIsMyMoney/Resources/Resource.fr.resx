@@ -118,63 +118,63 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Accept" xml:space="preserve">
-    <value>Aceptar</value>
+    <value>Accepter</value>
   </data>
-  <data name="AmountLabel" xml:space="preserve">
-    <value>Cantidad:</value>
+  <data name="Currency" xml:space="preserve">
+    <value>Devise</value>
   </data>
-  <data name="AmountNumericValidation" xml:space="preserve">
-    <value>Debes ingresar un valor numérico en cantidad.</value>
+  <data name="EMail" xml:space="preserve">
+    <value>Adresse de messagerie :</value>
   </data>
-  <data name="AmountPlaceHolder" xml:space="preserve">
-    <value>Ingrese cantidad…</value>
-  </data>
-  <data name="AmountValidation" xml:space="preserve">
-    <value>Debes ingresar un valor en cantidad.</value>
-  </data>
-  <data name="Error" xml:space="preserve">
-    <value>Error</value>
-  </data>
-  <data name="Loading" xml:space="preserve">
-    <value>Cargando...</value>
-  </data>
-  <data name="Ready" xml:space="preserve">
-    <value>Listo!</value>
-  </data>
-  <data name="Title" xml:space="preserve">
-    <value>Donde Fue Mi Dinero?</value>
+  <data name="EmailPlaceHolder" xml:space="preserve">
+    <value>Entrez votre adresse e-mail</value>
   </data>
   <data name="EmailValidation" xml:space="preserve">
-    <value>Debes ingresar un email.</value>
+    <value>Vous devez entrer un email.</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Erreur</value>
   </data>
   <data name="Forgot" xml:space="preserve">
-    <value>¿Olvidaste tu contraseña?</value>
+    <value>Vous avez oublié votre mot de passe ?</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Informations</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Connexion</value>
+  </data>
+  <data name="MyLanguages" xml:space="preserve">
+    <value>Langues</value>
+  </data>
+  <data name="NativeName" xml:space="preserve">
+    <value>Nom natif</value>
+  </data>
+  <data name="NumericCode" xml:space="preserve">
+    <value>code numérique</value>
   </data>
   <data name="Password" xml:space="preserve">
-    <value>Contraseña</value>
+    <value>Mot de passe :</value>
   </data>
   <data name="PasswordPlaceHolder" xml:space="preserve">
-    <value>Ingresa tu contraseña...</value>
+    <value>Entrez votre mot de passe</value>
   </data>
   <data name="PasswordValidation" xml:space="preserve">
-    <value>Debes ingresar una contraseña....</value>
+    <value>Vous devez entrer un mot de passe.</value>
   </data>
   <data name="Rememberme" xml:space="preserve">
-    <value>Recordarme en este dispositivo</value>
+    <value>dans ce dispositif</value>
   </data>
-  <data name="PasswordValidation" xml:space="preserve">
-    <value>Debes ingresar una contraseña....</value>
+  <data name="Search" xml:space="preserve">
+    <value>Rechercher</value>
   </data>
-  <data name="PasswordValidation" xml:space="preserve">
-    <value>Debes ingresar una contraseña....</value>
+  <data name="SomethingWrong" xml:space="preserve">
+    <value>Il semble qu’il y ait un problème. Veuillez essayer plus tard.</value>
   </data>
-  <data name="PasswordValidation" xml:space="preserve">
-    <value>Debes ingresar una contraseña....</value>
+  <data name="Spanish" xml:space="preserve">
+    <value>Espagnol</value>
   </data>
-  <data name="PasswordValidation" xml:space="preserve">
-    <value>Debes ingresar una contraseña....</value>
-  </data>
-  <data name="PasswordValidation" xml:space="preserve">
-    <value>Debes ingresar una contraseña....</value>
+  <data name="Translations" xml:space="preserve">
+    <value>Traductions</value>
   </data>
 </root>

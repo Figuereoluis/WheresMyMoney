@@ -98,63 +98,63 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Accept" xml:space="preserve">
-    <value>Accept</value>
+    <value>Aceptar</value>
   </data>
   <data name="Currency" xml:space="preserve">
-    <value>Currency</value>
+    <value>Moneda</value>
   </data>
   <data name="EMail" xml:space="preserve">
     <value>E-Mail</value>
   </data>
   <data name="EmailPlaceHolder" xml:space="preserve">
-    <value>Enter your email...</value>
+    <value>Ingresa tu email..</value>
   </data>
   <data name="EmailValidation" xml:space="preserve">
-    <value>You must enter an email.</value>
+    <value>Debes ingresar un email.</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Error</value>
   </data>
   <data name="Forgot" xml:space="preserve">
-    <value>Forgot your password?</value>
+    <value>¿Olvidó su contraseña?</value>
   </data>
   <data name="Information" xml:space="preserve">
-    <value>Information</value>
+    <value>Información</value>
   </data>
   <data name="Login" xml:space="preserve">
     <value>Login</value>
   </data>
   <data name="MyLanguages" xml:space="preserve">
-    <value>Languages</value>
+    <value>Idiomas</value>
   </data>
   <data name="NativeName" xml:space="preserve">
-    <value>Native Name:</value>
+    <value>Nombre Nativo:</value>
   </data>
   <data name="NumericCode" xml:space="preserve">
-    <value>Numeric Code:</value>
+    <value>Código Numérico:</value>
   </data>
   <data name="Password" xml:space="preserve">
-    <value>Password</value>
+    <value>Contraseña</value>
   </data>
   <data name="PasswordPlaceHolder" xml:space="preserve">
-    <value>Enter your password...</value>
+    <value>Escriba la contraseña...</value>
   </data>
   <data name="PasswordValidation" xml:space="preserve">
-    <value>You must enter a password.</value>
+    <value>Debe escribir una contraseña...</value>
   </data>
   <data name="Rememberme" xml:space="preserve">
-    <value>Rememberme in this device</value>
+    <value>Recordarme en este dispositivo</value>
   </data>
   <data name="Search" xml:space="preserve">
-    <value>Search...</value>
+    <value>Buscar...</value>
   </data>
   <data name="SomethingWrong" xml:space="preserve">
-    <value>Something was wrong, please try later.</value>
+    <value>Algo salió mal, por favor intenta más tarde.</value>
   </data>
   <data name="Spanish" xml:space="preserve">
-    <value>Spanish:</value>
+    <value>Español:</value>
   </data>
   <data name="Translations" xml:space="preserve">
-    <value>Translations</value>
+    <value>Traducciones</value>
   </data>
 </root>

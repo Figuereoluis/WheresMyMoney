@@ -70,38 +70,38 @@ namespace WhereIsMyMoney.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Amount:.
+        ///   Looks up a localized string similar to Currency.
         /// </summary>
-        public static string AmountLabel {
+        public static string Currency {
             get {
-                return ResourceManager.GetString("AmountLabel", resourceCulture);
+                return ResourceManager.GetString("Currency", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter a numeric value in amount..
+        ///   Looks up a localized string similar to E-Mail.
         /// </summary>
-        public static string AmountNumericValidation {
+        public static string EMail {
             get {
-                return ResourceManager.GetString("AmountNumericValidation", resourceCulture);
+                return ResourceManager.GetString("EMail", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enter amount....
+        ///   Looks up a localized string similar to Enter your email....
         /// </summary>
-        public static string AmountPlaceHolder {
+        public static string EmailPlaceHolder {
             get {
-                return ResourceManager.GetString("AmountPlaceHolder", resourceCulture);
+                return ResourceManager.GetString("EmailPlaceHolder", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter a value in amount..
+        ///   Looks up a localized string similar to You must enter an email..
         /// </summary>
-        public static string AmountValidation {
+        public static string EmailValidation {
             get {
-                return ResourceManager.GetString("AmountValidation", resourceCulture);
+                return ResourceManager.GetString("EmailValidation", resourceCulture);
             }
         }
         
@@ -115,117 +115,128 @@ namespace WhereIsMyMoney.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Loading....
+        ///   Looks up a localized string similar to Forgot your password?.
         /// </summary>
-        public static string Loading {
+        public static string Forgot {
             get {
-                return ResourceManager.GetString("Loading", resourceCulture);
+                return ResourceManager.GetString("Forgot", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ready!.
+        ///   Looks up a localized string similar to Information.
         /// </summary>
-        public static string Ready {
-            get {
-                return ResourceManager.GetString("Ready", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Where Was My Money?.
-        /// </summary>
-        public static string Title {
-            get {
-                return ResourceManager.GetString("Title", resourceCulture);
-            }
-        }
-
-        public static string EmailValidation {
-            get {
-                return ResourceManager.GetString("You must enter an email.", resourceCulture);
-            }
-        }
-         public static string EmailPlaceHolder {
-            get {
-                return ResourceManager.GetString("Enter your email...", resourceCulture);
-            }
-        }
-
-        public static string Rememberme {
-            get {
-                return ResourceManager.GetString("Rememberme in this device", resourceCulture);
-            }
-        }
-
-
-        public static string PasswordValidation {
-            get {
-                return ResourceManager.GetString("You must enter a password.", resourceCulture);
-            }
-        }
-
-         public static string SomethingWrong {
-            get {
-                return ResourceManager.GetString("Something was wrong, please try later.", resourceCulture);
-            }
-        }
-
-         public static string Login {
-            get {
-                return ResourceManager.GetString("Login", resourceCulture);
-            }
-        }
-
-         public static string EMail {
-            get {
-                return ResourceManager.GetString("E-Mail", resourceCulture);
-            }
-        }
- public static string Password {
-            get {
-                return ResourceManager.GetString("Password", resourceCulture);
-            }
-        }
-
- public static string PasswordPlaceHolder {
-            get {
-                return ResourceManager.GetString("Enter your password...", resourceCulture);
-            }
-        }
-
-        
- public static string Forgot {
-            get {
-                return ResourceManager.GetString("Forgot your password?", resourceCulture);
-            }
-        }
-
-        
- public static string Register {
-            get {
-                return ResourceManager.GetString("Register", resourceCulture);
-            }
-        }
-
-        
- public static string Search {
-            get {
-                return ResourceManager.GetString("Search...", resourceCulture);
-            }
-        }
-        
-        
- public static string Information {
+        public static string Information {
             get {
                 return ResourceManager.GetString("Information", resourceCulture);
             }
         }
-
         
- public static string Currencies {
+        /// <summary>
+        ///   Looks up a localized string similar to Login.
+        /// </summary>
+        public static string Login {
             get {
-                return ResourceManager.GetString("Currencies", resourceCulture);
+                return ResourceManager.GetString("Login", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Languages.
+        /// </summary>
+        public static string MyLanguages {
+            get {
+                return ResourceManager.GetString("MyLanguages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Native Name:.
+        /// </summary>
+        public static string NativeName {
+            get {
+                return ResourceManager.GetString("NativeName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Numeric Code:.
+        /// </summary>
+        public static string NumericCode {
+            get {
+                return ResourceManager.GetString("NumericCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password.
+        /// </summary>
+        public static string Password {
+            get {
+                return ResourceManager.GetString("Password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter your password....
+        /// </summary>
+        public static string PasswordPlaceHolder {
+            get {
+                return ResourceManager.GetString("PasswordPlaceHolder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You must enter a password..
+        /// </summary>
+        public static string PasswordValidation {
+            get {
+                return ResourceManager.GetString("PasswordValidation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rememberme in this device.
+        /// </summary>
+        public static string Rememberme {
+            get {
+                return ResourceManager.GetString("Rememberme", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search....
+        /// </summary>
+        public static string Search {
+            get {
+                return ResourceManager.GetString("Search", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Something was wrong, please try later..
+        /// </summary>
+        public static string SomethingWrong {
+            get {
+                return ResourceManager.GetString("SomethingWrong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Spanish:.
+        /// </summary>
+        public static string Spanish {
+            get {
+                return ResourceManager.GetString("Spanish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Translations.
+        /// </summary>
+        public static string Translations {
+            get {
+                return ResourceManager.GetString("Translations", resourceCulture);
             }
         }
     }

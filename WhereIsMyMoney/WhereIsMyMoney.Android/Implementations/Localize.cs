@@ -1,6 +1,6 @@
 ﻿using Xamarin.Forms;
 
-[assembly: Dependency(typeof(WhereIsMyMoney.Droid.Localize))]
+[assembly: Dependency(typeof(WhereIsMyMoney.Droid.Implementations.Localize))]
 
 namespace WhereIsMyMoney.Droid.Implementations
 {
